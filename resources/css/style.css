@@ -34,6 +34,13 @@ header {
   height: 30rem;
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    height: 22rem;
+    background-position: center;
+  }
+}
+
 #top-bar {
   background-color: cadetblue;
   width: 960px;
@@ -42,10 +49,17 @@ header {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #top-bar {
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
+
 #logo-text {
   margin-left: 2rem;
   flex-wrap: nowrap;
-  witdh: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -94,6 +108,20 @@ h1 {
   background-color: white;
   margin-top: 10rem;
   margin-left: 28rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #title-blurb {
+      margin: 0.57rem 4rem;
+      background-color: white;
+      margin-top: 10rem;
+      margin-left: 28rem;
+      margin-left: auto;
+      margin-right: 2rem;
+  }
+  h1 {
+    font-size: 1.33rem;
+  }
 }
 
 /* services styling*/
