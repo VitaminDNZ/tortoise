@@ -12,6 +12,13 @@ body {
   justify-content: center;
 }
 
+.centering-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*header styles incl top bar with logo and navigation */
 #top-bar,
 #logo,
@@ -83,9 +90,112 @@ h1 {
 }
 
 #title-blurb {
-  /*background-color: white;*/
   margin: 1.5rem 5rem;
   background-color: white;
   margin-top: 10rem;
   margin-left: 28rem;
 }
+
+/* services styling*/
+#services {
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  justify-content: center;
+  width: 960px;
+}
+
+.service {
+  height: 8rem;
+  width: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+#paper {
+  width: 3.5rem;
+  padding-left: 1.75rem;
+}
+
+#paper img {
+  width: 100%;
+}
+
+#ruler,
+#truck {
+  width: 5rem;
+}
+
+#ruler img,
+#truck img {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.service p {
+  text-align: center;
+}
+
+/*main content styling */
+
+#main-content {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  clear: left;
+  margin-bottom: 5rem;
+}
+
+
+.content-block .block-title {
+  background-color: cadetblue;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.content-block {
+  flex-direction: column;
+  display: flex;
+  width: 35%;
+}
+
+#mid-block {
+    width: 5%;
+  }
+
+
+  /*footer styling */
+
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #bottom-bar {
+    background-color: azure;
+    width: 960px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    }
+
+    #copyright-logo-img {
+      height: 1.5rem;
+      margin-left: 4rem;
+      margin-right: 1rem;
+    }
+    #copyright-logo-img img {
+      height: 100%;
+    }
