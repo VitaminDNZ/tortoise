@@ -41,6 +41,16 @@ header {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  #logo-text {
+    display: none;
+  }
+}
+
 #top-bar {
   background-color: cadetblue;
   width: 960px;
@@ -91,6 +101,23 @@ nav ul li:last-child {
 nav {
   width: 100%;
   text-align: right;
+  z-index: 1;
+}
+
+nav ul #mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  nav ul .menu {
+    display: none;
+  }
+  nav ul #mobile-menu {
+    display: inline-flex;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
     /*blurb styling*/
@@ -112,15 +139,29 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   #title-blurb {
-      margin: 0.57rem 4rem;
+      margin: 0.75rem 4rem;
       background-color: white;
       margin-top: 10rem;
-      margin-left: 28rem;
       margin-left: auto;
       margin-right: 2rem;
   }
   h1 {
     font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #title-blurb {
+      width: 100%;
+      margin-top: 9rem;
+
+  }
+
+  h1 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 }
 
@@ -131,6 +172,20 @@ h1 {
   margin-top: 3rem;
   justify-content: center;
   width: 960px;
+}
+
+@media only screen and (max-width: 480px) {
+  #services {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+  }
+
+  #ruler {
+    margin-top:
+  }
+
 }
 
 .service {
